@@ -1,0 +1,190 @@
+/* 3D Transform Effects */
+.profile-container {
+    perspective: 1000px;
+}
+
+.profile-image {
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease;
+}
+
+.profile-image:hover {
+    transform: rotateY(180deg);
+}
+
+/* 3D Card Hover Effect */
+.project-card {
+    transform-style: preserve-3d;
+    transition: all 0.5s ease;
+}
+
+.project-card:hover {
+    transform: translateY(-10px) rotateX(10deg);
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* 3D Button Effects */
+.cta-button {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+.cta-button:hover {
+    transform: translateZ(20px) rotateX(-10deg);
+}
+
+.cta-button::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, #007bff, #00ff88);
+    transform: translateZ(-20px);
+    filter: blur(20px);
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.cta-button:hover::after {
+    opacity: 0.5;
+}
+
+/* 3D Skill Bars */
+.skill-bar {
+    transform-style: preserve-3d;
+    perspective: 1000px;
+}
+
+.skill-progress {
+    position: relative;
+    transform: translateZ(10px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* 3D Social Icons */
+.social-links a {
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover {
+    transform: translateZ(30px) rotateY(360deg);
+}
+
+/* Parallax Scrolling Effect */
+.home-section {
+    position: relative;
+    overflow: hidden;
+}
+
+.home-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(45deg, rgba(0,123,255,0.1), rgba(0,255,136,0.1));
+    transform-style: preserve-3d;
+    animation: parallax 20s infinite linear;
+}
+
+@keyframes parallax {
+    0% {
+        transform: translateZ(0) rotate(0);
+    }
+    100% {
+        transform: translateZ(100px) rotate(360deg);
+    }
+}
+
+/* 3D Text Effects */
+h1, h2, h3 {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+h1:hover, h2:hover, h3:hover {
+    transform: translateZ(20px);
+    text-shadow: 2px 2px 5px rgba(0,0,0,0.2);
+}
+
+/* Floating Animation */
+@keyframes float {
+    0% {
+        transform: translateY(0) translateZ(0);
+    }
+    50% {
+        transform: translateY(-20px) translateZ(20px);
+    }
+    100% {
+        transform: translateY(0) translateZ(0);
+    }
+}
+
+.tech-tags span {
+    transform-style: preserve-3d;
+    animation: float 3s ease infinite;
+    animation-delay: calc(var(--i) * 0.2s);
+}
+
+/* 3D Form Elements */
+.contact-form input,
+.contact-form textarea {
+    transform-style: preserve-3d;
+    transition: all 0.3s ease;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus {
+    transform: translateZ(10px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+/* Glowing Effect */
+@keyframes glow {
+    0% {
+        box-shadow: 0 0 5px rgba(0,123,255,0.5);
+    }
+    50% {
+        box-shadow: 0 0 20px rgba(0,123,255,0.8);
+    }
+    100% {
+        box-shadow: 0 0 5px rgba(0,123,255,0.5);
+    }
+}
+
+.skill-progress:hover {
+    animation: glow 2s infinite;
+}
+
+/* 3D Navigation */
+.nav-menu li a {
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.3s ease;
+}
+
+.nav-menu li a:hover {
+    transform: translateZ(20px);
+}
+
+.nav-menu li a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #007bff;
+    transform: scaleX(0) translateZ(-10px);
+    transition: transform 0.3s ease;
+}
+
+.nav-menu li a:hover::after {
+    transform: scaleX(1) translateZ(-10px);
+} 

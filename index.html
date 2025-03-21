@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Cá Nhân</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-brand">Portfolio</div>
+        <ul class="nav-menu">
+            <li><a href="#home">Trang chủ</a></li>
+            <li><a href="#about">Giới thiệu</a></li>
+            <li><a href="#skills">Kỹ năng</a></li>
+            <li><a href="#projects">Dự án</a></li>
+            <li><a href="#contact">Liên hệ</a></li>
+        </ul>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="home-section">
+        <div class="profile-container">
+            <img src="avatar.jpg" alt="Avatar" class="profile-image">
+            <h1>Nguyễn Hoài Nam</h1>
+            <p class="title">Front-End Developer</p>
+            <p class="slogan">"Coding with passion, building with purpose"</p>
+            <a href="#contact" class="cta-button">Liên hệ với tôi</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <h2>Về tôi</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Tôi là một Front-End Developer với 1 năm kinh nghiệm trong việc phát triển ứng dụng web. Đam mê công nghệ và luôn tìm tòi học hỏi những điều mới.</p>
+                <p>Sở thích: Đọc sách, chơi guitar, và khám phá công nghệ mới</p>
+            </div>
+            <div class="tech-stack">
+                <h3>Công nghệ thành thạo</h3>
+                <div class="tech-tags">
+                    <span>JavaScript</span>
+                    <span>React</span>
+                    <span>Node.js</span>
+                    <span>Git</span>
+                    <span>GitHub</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <h2>Kỹ năng</h2>
+        <div class="skills-container">
+            <div class="skill-category">
+                <h3>Frontend</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 90%">HTML/CSS</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 80%">JavaScript</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 70%">React</div>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Backend</h3>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 45%">Node.js</div>
+                </div>
+                <div class="skill-bar">
+                    <div class="skill-progress" style="width: 55%">PHP</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <h2>Dự án</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <img src="blackpink.jpg" alt="BlackPink Information">
+                <h3>BlackPink Information</h3>
+                <p>Website thông tin về nhóm nhạc BlackPink sử dụng JavaScript</p>
+                <div class="project-links">
+                    <a href="https://nguyennam1203.github.io/BlackPink_information/" target="_blank">Demo</a>
+                    <a href="https://github.com/NguyenNam1203/BlackPink_information" target="_blank">GitHub</a>
+                </div>
+            </div>
+            
+            <div class="project-card">
+                <img src="w3_blackpink.jpeg" alt="W3 BlackPink">
+                <h3>W3 BlackPink</h3>
+                <p>Website clone W3Schools với chủ đề BlackPink sử dụng CSS</p>
+                <div class="project-links">
+                    <a href="https://nguyennam1203.github.io/w3_blackpink/" target="_blank">Demo</a>
+                    <a href="https://github.com/NguyenNam1203/w3_blackpink" target="_blank">GitHub</a>
+                </div>
+            </div>
+
+            <div class="project-card">
+                <img src="cellmilk.jpg" alt="CellMilk">
+                <h3>CellMilk Shop</h3>
+                <p>Website bán sữa CellMilk sử dụng HTML</p>
+                <div class="project-links">
+                    <a href="https://nguyennam1203.github.io/CellMilk-b-n-s-a-/" target="_blank">Demo</a>
+                    <a href="https://github.com/NguyenNam1203/CellMilk-b-n-s-a-" target="_blank">GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <h2>Liên hệ</h2>
+        <div class="contact-container">
+            <div class="social-links">
+                <a href="https://github.com/NguyenNam1203" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="" target="_blank" title="LinkedIn">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/HoaiNamNguyen1203" target="_blank" title="Facebook">
+                    <i class="fab fa-facebook"></i>
+                </a>
+                <a href="" target="_blank" title="Telegram">
+                    <i class="fab fa-telegram"></i>
+                </a>
+                <a href="mailto:nanhhh327112@gmail.com" title="Email">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+            <form class="contact-form">
+                <input type="text" placeholder="Họ và tên" required>
+                <input type="email" placeholder="Email" required>
+                <textarea placeholder="Nội dung tin nhắn" required></textarea>
+                <button type="submit">Gửi tin nhắn</button>
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
